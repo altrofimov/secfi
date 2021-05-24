@@ -1,0 +1,121 @@
+.app-container {
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 768px;
+  margin: 0 40px;
+  padding: 20px 40px;
+  background: #fff;
+}
+
+
+/* Header */
+.title {
+  padding-right: 20px;
+}
+
+.humour {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  color: #bbb;
+}
+
+/* Content */
+.currency-exchange {
+  position: relative;
+  display: grid;
+  grid-template-columns: calc(50% - 30px) calc(50% - 30px);
+  grid-gap: 60px;
+}
+
+.currency-exchange select{
+  width: 100%;
+}
+
+.currency-amount input {
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 100px;
+}
+
+
+/* Statistics */
+.statistics {
+  display: grid;
+  grid-template-columns: calc(50% - 30px) calc(50% - 30px);
+  grid-gap: 60px;
+}
+
+.statistics-data {
+  margin-top: 60px;
+}
+
+.statistics-data label {
+  margin-bottom: 10px;
+}
+
+.statistics-data span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.positive {
+  color: #15B735;
+}
+
+.negative {
+  color: #fe4820;
+}
+
+.statistics-data .bull-market,
+.statistics-data .bear-market {
+  font-size: 12px;
+}
+
+.negative .bull-market {
+  display: none;
+
+}
+.positive .bear-market {
+  display: none;
+}
+
+.app .chart {
+  margin-top: 40px;
+  box-shadow: none;
+}
+
+.error {
+  color: #ff0000;
+  text-align: center;
+}
+
+
+/* Mobile and Tablet support */
+@media screen and (max-width: 992px) {
+  .currency-amount input {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app h1 {
+    font-size: 34px;
+  }
+
+  .app {
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .currency-amount input {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .currency-amount input {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,47 @@
+@import "~normalize.css/normalize.css";
+
+@font-face {
+  font-family: Tiempos Headline;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url(assets/fonts/TiemposHeadlineWeb-Semibold.b3d39bfb3f6e782ab059163797e6eb73.woff2) format("woff2"),url(assets/fonts/TiemposHeadlineWeb-Semibold.4dc74c00ee006ac8463967c5142550e0.woff) format("woff")
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(assets/fonts/AvenirLTStd-Book.1854ec4d927699d2419c2daf723e4233.woff2) format("woff2"),url(assets/fonts/AvenirLTStd-Book.c29fc9a99cf21bdc1e048581b100c845.woff) format("woff")
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(assets/fonts/AvenirLTStd-Medium.9f80cf3914e7289d1d518851aa25c1f8.woff2) format("woff2"),url(assets/fonts/AvenirLTStd-Medium.68bf6e2cc0fb36b5ca32077d7e67f986.woff) format("woff")
+}
+
+html {
+  background: #4CA1AF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html,
+body {
+  height: 100%;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  font-family: Avenir, Arial, sans-serif;
+}
+
+h1 {
+  margin: 0 0 40px 0;
+  color: #2a3749;
+  font-size: 54px;
+  font-family: Tiempos Headline, Arial, sans-serif;
+}
